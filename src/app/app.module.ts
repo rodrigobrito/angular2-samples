@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+import { SiteChildComponent } from './input-samples/site-child-component';
+import { SiteParentComponent } from './input-samples/site-parent-component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    SiteChildComponent,
+    SiteParentComponent
   ],
   imports: [
     BrowserModule,
@@ -15,6 +17,6 @@ import { AppComponent } from './app.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ SiteParentComponent ]
 })
 export class AppModule { }
