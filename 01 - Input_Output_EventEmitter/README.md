@@ -1,9 +1,9 @@
 # Input / Output / EventEmitter
 
-Pass data from parent to child with input binding
-Intercept input property changes with a setter
-Intercept input property changes with ngOnChanges
-Parent listens for child event (EventEmitter)
+* Pass data from parent to child with input binding
+* Intercept input property changes with a setter
+* Intercept input property changes with ngOnChanges
+* Parent listens for child event (EventEmitter)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.0.
 
