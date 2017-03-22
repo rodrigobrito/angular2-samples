@@ -5,11 +5,11 @@ import { ActivatedRoute } from '@angular/router';
 import { SampleService } from '../shared/services/sample.service';
 
 @Component({
-  selector: 'home2',
-  templateUrl: './home2.component.html'
+  selector: 'home4',
+  templateUrl: './home4.component.html'
 })
 
-export class Home2Component implements OnInit {  
+export class Home4Component implements OnInit {  
 
   constructor(private sampleService : SampleService) {        
   }

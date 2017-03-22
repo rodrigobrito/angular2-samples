@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { Home2Component } from './home2.component';
-import { SampleService } from './services/sample.service';
+import { SharedModule } from '../shared/shared.module';
 
 const routes: Routes = [{
     path: '',
@@ -10,10 +10,9 @@ const routes: Routes = [{
 }];
 
 @NgModule({  
-  imports: [ CommonModule, RouterModule, RouterModule.forChild(routes) ],
+  imports: [ CommonModule, RouterModule, RouterModule.forChild(routes),  SharedModule],
   declarations: [ Home2Component ],
-  exports: [ Home2Component, RouterModule],
-  providers: [ SampleService ]
+  exports: [ Home2Component, RouterModule]
 })
 
 export class Home2Module {

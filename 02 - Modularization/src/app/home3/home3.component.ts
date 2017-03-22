@@ -2,14 +2,14 @@ import { Component, Input, OnInit, Directive } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 import { ActivatedRoute } from '@angular/router';
-import { SampleService } from '../shared/services/sample.service';
+import { SampleService } from './services/sample.service';
 
 @Component({
-  selector: 'home2',
-  templateUrl: './home2.component.html'
+  selector: 'home3',
+  templateUrl: './home3.component.html'
 })
 
-export class Home2Component implements OnInit {  
+export class Home3Component implements OnInit {  
 
   constructor(private sampleService : SampleService) {        
   }

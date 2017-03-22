@@ -5,6 +5,9 @@ import { HttpModule } from '@angular/http';
 import { SampleService } from './shared/services/sample.service';
 import { AppComponent } from './app.component';
 import { RoutingModule } from './app.routes';
+import { SharedModule } from "./shared/shared.module";
+import { Home3Module  } from "./home3/home3.module";
+import { Home4Module  } from "./home4/home4.module";
 
 @NgModule({
   declarations: [
@@ -15,6 +18,9 @@ import { RoutingModule } from './app.routes';
     RoutingModule,
     FormsModule,
     HttpModule,    
+    Home3Module,
+    Home4Module,
+    SharedModule//.forRoot()
   ],
   providers: [ SampleService ],
   bootstrap: [ AppComponent ]

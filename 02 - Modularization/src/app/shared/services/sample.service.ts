@@ -2,7 +2,8 @@ export class SampleService {
     static counter = 0;
     id = 0;
 
-    constructor() {        
+    constructor() {   
+        console.log("Shared service initialized.");   
     }
 
     increment() : void {

@@ -19,4 +19,12 @@ export class AppComponent {
   gotHome2() : void  {
     this.router.navigate([`/home2`]);
   }
+
+  gotHome3() : void  {
+    this.router.navigate([`/home3`]);
+  }
+
+  gotHome4() : void  {
+    this.router.navigate([`/home4`]);
+  }
 }
