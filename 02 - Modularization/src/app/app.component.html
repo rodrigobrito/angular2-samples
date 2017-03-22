@@ -2,10 +2,12 @@
   {{title}}
 </h1>
 <section>
-  <button (click)="gotHome1()">Home 1</button>
-  <button (click)="gotHome2()">Home 2</button>
-  <button (click)="gotHome3()">Home 3</button>
-  <button (click)="gotHome4()">Home 4</button>
+  <button (click)="gotHome1X()" style="background-color: greenyellow">Home 1 - X (Lazy)</button>
+  <button (click)="gotHome1Y()" style="background-color: greenyellow">Home 1 - Y (Lazy)</button>
+  <button (click)="gotHome2()" style="background-color: blanchedalmond">Home 2 (Lazy)</button>
+  <button (click)="gotHome3()" style="background-color: azure">Home 3 (On Start) - (Local Service)</button>
+  <button (click)="gotHome4()" style="background-color: aquamarine">Home 4 (On Start)</button>
+  <button (click)="gotHome5()" style="background-color: aquamarine">Home 5 (On Start)</button>
 </section>
 <section>
   <router-outlet></router-outlet>

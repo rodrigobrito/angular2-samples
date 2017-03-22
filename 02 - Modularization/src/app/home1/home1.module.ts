@@ -5,7 +5,10 @@ import { SharedModule } from '../shared/shared.module';
 import { Home1Component } from './home1.component';
 
 const routes: Routes = [{
-    path: '',
+    path: 'x',
+    component: Home1Component
+}, {
+    path: 'y',
     component: Home1Component
 }];
 

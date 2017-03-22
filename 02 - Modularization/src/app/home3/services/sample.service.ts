@@ -1,13 +1,14 @@
 export class SampleService {
-    static counter = 0;
-    id = 0;
+    public static counter = 0;
+    private localVar: number = 0;
 
     constructor() {  
-        console.log("Diferent sample service, initialized") ;     
+        console.log("Local service module, initialized") ;     
     }
 
     increment() : void {
-        this.id = ++SampleService.counter;
-        console.log(`Sample with id ${this.id} - XXXX`);
+        SampleService.counter++;
+        this.localVar++;
+        console.log(`Sample with increment ${SampleService.counter} - Local module - ${this.localVar}`);
     }
  }

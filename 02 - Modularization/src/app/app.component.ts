@@ -7,13 +7,18 @@ import { Router} from '@angular/router'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';  
+  title = 'Modules - Lazy load instances...';  
 
   constructor(private router: Router) {    
+    this.gotHome1X();
   }  
 
-  gotHome1() : void  {
-    this.router.navigate([`/home1`]);
+  gotHome1X() : void  {
+    this.router.navigate([`/home1/x`]);
+  }
+
+  gotHome1Y() : void  {
+    this.router.navigate([`/home1/y`]);
   }
 
   gotHome2() : void  {
@@ -26,5 +31,9 @@ export class AppComponent {
 
   gotHome4() : void  {
     this.router.navigate([`/home4`]);
+  }
+
+  gotHome5() : void  {
+    this.router.navigate([`/home5`]);
   }
 }
