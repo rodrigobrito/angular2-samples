@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SampleService } from './services/sample.service';
 
 @NgModule({  
-  providers: [ SampleService ]
+   providers: [ SampleService ]
 })
 export class SharedModule {
     // static forRoot() : ModuleWithProviders {

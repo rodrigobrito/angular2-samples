@@ -5,7 +5,7 @@ import { Home4Component } from './home4/home4.component';
 import { Home5Component } from './home5/home5.component';
 
 const routes: Routes = [   
-  { path: '', redirectTo: '/home5', pathMatch: 'full' },
+  { path: '', redirectTo: '/home1', pathMatch: 'full' },
   { path: 'home1', loadChildren: 'app/home1/home1.module#Home1Module' },   
   { path: 'home2', loadChildren: 'app/home2/home2.module#Home2Module' },
   { path: 'home3', component: Home3Component },

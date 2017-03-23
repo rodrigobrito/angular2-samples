@@ -10,15 +10,11 @@ export class AppComponent {
   title = 'Modules - Lazy load instances...';  
 
   constructor(private router: Router) {    
-    this.gotHome1X();
+    this.gotHome1();
   }  
 
-  gotHome1X() : void  {
-    this.router.navigate([`/home1/x`]);
-  }
-
-  gotHome1Y() : void  {
-    this.router.navigate([`/home1/y`]);
+  gotHome1() : void  {
+    this.router.navigate([`/home1`]);
   }
 
   gotHome2() : void  {

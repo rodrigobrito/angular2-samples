@@ -21,7 +21,7 @@ import { Home5Module  } from "./home5/home5.module";
     Home3Module,
     Home4Module,
     Home5Module,
-    SharedModule //.forRoot()
+    SharedModule//.forRoot()
   ],  
   bootstrap: [ AppComponent ]
 })
